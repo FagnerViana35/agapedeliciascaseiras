@@ -1,11 +1,14 @@
 import { styled } from "@stitches/react";
 
 export const FooterContainer = styled('footer', {
-    padding: '20px',
     textAlign: 'center',
     position: 'fixed',
     bottom: '0',
-    width: '100%'
+    width: '100%',
+    '@lg': {
+      padding: '20px',
+  },
+
 })
 
 export const FooterText = styled('p', {
@@ -24,23 +27,18 @@ export const FooterLink = styled('a', {
 
 export const Versiculo = styled('div', {
   display: 'flex',
-  justifyContent: 'space-between',
+  justifyContent: 'space-around',
+  
   color: '#555',
-  textDecoration: 'none',
   fontSize: '$md',
-  margin: '0 30px',
-  '&:hover': {
-    textDecoration: 'underline'
-  }
+  margin: '0 30px'
 })
 
 export const LinkMidias = styled('div', {
   color: '#555',
   textDecoration: 'none',
   fontSize: '$mb',
-  '&:hover': {
-    textDecoration: 'underline'
-  }
+  marginBottom: '12px'
 })
 
 export const SpanVersiculo = styled('span', {
@@ -48,9 +46,6 @@ export const SpanVersiculo = styled('span', {
   textDecoration: 'none',
   fontSize: '$xs',
   float: 'right',
-  margin: '0 10px',
-  '&:hover': {
-    textDecoration: 'underline'
-  }
+  margin: '0 10px'
 })
 

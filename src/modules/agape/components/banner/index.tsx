@@ -1,8 +1,9 @@
 import { Box } from "@/modules/shared/components/Box";
-import { ContainerBanner, TitleContainer } from "./styles";
+import { BannerLeft, BannerRigth, ContainerBanner } from "./styles";
 import { Text } from "@/modules/shared/components/Text";
 import { Typography } from "@/modules/shared/components/Typography";
 import { Button } from "@/modules/shared/components/Button";
+import Image from "next/image";
 
 export const Banner = () =>{
     return(
@@ -18,7 +19,7 @@ export const Banner = () =>{
                         px: 0,
                     },
             }}>
-            <TitleContainer>
+            <BannerRigth>
             <Text css={{
                 fontSize: '$5xl' 
                 }}
@@ -31,7 +32,10 @@ export const Banner = () =>{
                 <Button css={{mt:'$34'}}>
                     <span>Entrar em Contato</span>
                 </Button>
-            </TitleContainer>
+            </BannerRigth>
+            <BannerLeft>
+                <Image src="/image/banner-agape.png" alt="Logo_Agape" width={300} height={250} />
+            </BannerLeft>
             </Box>
         </ContainerBanner>
     );
