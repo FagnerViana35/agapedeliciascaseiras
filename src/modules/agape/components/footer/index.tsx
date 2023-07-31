@@ -10,7 +10,6 @@ const Footer: React.FC = () => {
       <Box
         css={{
          margin: '0 auto',
-          maxWidth: '1200px',
           alignItems: 'center',
           mb: '10px',
           mr: '20px',
