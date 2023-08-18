@@ -49,24 +49,3 @@ export const MenuNavBarUl = styled('ul', {
       //   backgroundColor: '#ddd' 
       // }
     });
-  
-    export const MenuMobile = styled('div', {
-      display: 'flex',
-      border: 'none',
-      backgroundColor: '#fff',
-      width: '100%',
-      justifyContent: 'space-between',
-      // display: 'none',
-      // zIndex: '10',
-      // position: 'absolute',
-      // top: '0',
-      // right: '0',
-      // padding: '0.5rem',
-      // backgroundColor: '#ccc',
-      // border: 'none',
-      // cursor: 'pointer',
-      // '&:hover': {  
-      //   backgroundColor: '#ddd' 
-      // }
-    });
-    

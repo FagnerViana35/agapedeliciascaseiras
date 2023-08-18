@@ -7,17 +7,24 @@ export const BannerRigth = styled('div', {
     fontWeight: 'bold',
   })
 
-export const ContainerBanner = styled('div', {
+export const ContainerBanner = styled('div', {    
     backgroundColor: 'F6EBDA',
     color: '$warning-dark',
     fontWeight: 'bold',
+    '@media (max-width: 768px)': {
+      width: '380px'
+    }
   })
 
   
 
 export const BannerLeft = styled('div', {
-    backgroundColor: 'F6EBDA',
     color: '$warning-dark',
-    fontWeight: 'bold',
-  })
-  
+    paddingTop: '$30',
+    paddingRight:'$40',
+    '@media (max-width: 768px)': {
+      display: 'none',
+      paddingTop: '$30',
+      paddingBottom: '$30',
+    }
+});

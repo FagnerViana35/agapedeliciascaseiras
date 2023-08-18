@@ -17,6 +17,7 @@ export const Banner = () =>{
                     justifyContent: 'space-between',
                     '@lg': {
                         px: 0,
+                        
                     },
             }}>
             <BannerRigth>
@@ -34,7 +35,11 @@ export const Banner = () =>{
                 </Button>
             </BannerRigth>
             <BannerLeft>
-                <Image src="/image/banner-agape.png" alt="Logo_Agape" width={300} height={250} />
+                <Image 
+                    src="/image/banner-agape.png" 
+                    alt="Logo_Agape" 
+                    width={350} 
+                    height={250} />
             </BannerLeft>
             </Box>
         </ContainerBanner>
