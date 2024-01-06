@@ -8,7 +8,7 @@ export const NavBar = () => {
     return(
         <Box
         css={{
-            px: '$16',
+            //px: '$16',
             margin: '0 auto',
             maxWidth: '1200px',
             display: 'flex',
@@ -27,7 +27,12 @@ export const NavBar = () => {
             <LogoNavBar>
             <Image src="/image/logo-agape.png" alt="Logo_Agape" width={100} height={50} />
             </LogoNavBar>
-            <MenuNavBarUl >
+            <MenuNavBarUl 
+             css={{
+                '@media (max-width: 768px)': {
+                    display: 'none',
+                  },
+            }}>
                 <MenuNavBarLink>
                     <CustomLink href="/sobre">Sobre Nós</CustomLink>
                 </MenuNavBarLink>
