@@ -1,5 +1,11 @@
 import { styled } from "@stitches/react";
 
+export const ContainerNavBar = styled('div', {
+    backgroundColor: '#F6EBDA',
+    color: '$warning-dark',
+    fontWeight: 'bold',
+})
+
 export const LogoNavBar = styled('div', {
     backgroundColor: 'F6EBDA',
     color: '$warning-dark',

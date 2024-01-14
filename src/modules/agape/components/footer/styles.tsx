@@ -2,8 +2,10 @@ import { styled } from "@stitches/react";
 
 export const FooterContainer = styled('footer', {
     textAlign: 'center',
+    backgroundColor: '#F6EBDA',
     position: 'fixed',
     bottom: '0',
+    marginLeft: '-10px',
     width: '100%',
     '@lg': {
       padding: '20px',

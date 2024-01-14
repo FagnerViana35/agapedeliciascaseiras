@@ -1,5 +1,5 @@
 import { Box } from "@/modules/shared/components/Box";
-import { CloseOpenMenu, HamburgerMenu, LogoNavBar, MenuMobile, MenuNavBarLink, MenuNavBarUl } from "./styles";
+import { CloseOpenMenu, ContainerNavBar, HamburgerMenu, LogoNavBar, MenuMobile, MenuNavBarLink, MenuNavBarUl } from "./styles";
 import Image from 'next/image'
 import Link from 'next/link';
 import CustomLink from "@/modules/shared/components/Link";
@@ -7,15 +7,21 @@ import { NavBarMobile } from "../navBarMobile";
 
 export const NavBar = () => {
     return(
-        <Box
+        <ContainerNavBar
         css={{
             //px: '$16',
-            margin: '0 auto',
-            maxWidth: '1200px',
+            margin: '0px auto',
+            zIndex:'9999',
+            //maxWidth: '1200px',
             display: 'flex',
             justifyContent: 'space-between',
+            position: 'fixed',
+            top: '0',
+            paddingLeft: '30px',
+            marginLeft: '-10px',
+            width:'100%',
             '@lg': {
-              px: 0,
+              //px: 0,
             },
           }}>
           {/* <HamburgerMenu 
@@ -31,20 +37,18 @@ export const NavBar = () => {
             </Link>
             </LogoNavBar>
             <MenuNavBarUl 
-            //  css={{
-            //     '@media (max-width: 768px)': {
-            //         display: 'none',
-            //       },
-            // }}
+             css={{
+                paddingRight: '60px',
+            }}
             >
                 <MenuNavBarLink>
-                    <CustomLink href="#secao-about">Sobre Nós</CustomLink>
+                    <CustomLink href="#about">Quem Somos</CustomLink>
                 </MenuNavBarLink>
                 <MenuNavBarLink>
-                    <CustomLink href="/sobre">Teste 01</CustomLink>
+                    <CustomLink href="#product">Nossos Produtos</CustomLink>
                 </MenuNavBarLink>
                 <MenuNavBarLink>
-                    <CustomLink href="/sobre">Teste 02</CustomLink>
+                    <CustomLink href="#form_contact">Contato</CustomLink>
                 </MenuNavBarLink>
             </MenuNavBarUl>  
 
@@ -57,6 +61,6 @@ export const NavBar = () => {
             }}>
                 <NavBarMobile/>   */}
             {/* </MenuMobile> */}
-        </Box>
+        </ContainerNavBar>
     );
 }

@@ -5,11 +5,13 @@ import { ContainerHome } from "./styles";
 import { Banner } from "../components/banner";
 import { About } from "../about";
 import { Carossel } from "../components/carousel";
+import ContatoForm from "../components/formulario";
 
 export const HomePage = () => {
  
 return(
   <ContainerHome>
+    <NavBar />
     <Box
     css={{
         py: '$12',
@@ -22,7 +24,7 @@ return(
         },
       }}
     >
-    <NavBar />
+    
     <Box
     css={{
         py: '$34',
@@ -54,15 +56,26 @@ return(
     <About/>
     </Box>
     <Box
-      id="secao-about"
+    id="form_contact"
+    css={{
+      py: '$12',
+      px: '$16',
+      margin: '0 auto',
+      maxWidth: '1200px',
+      background: 'F6EBDA',
+      '@lg': {
+        px: 0,
+      },
+  }}>
+    <ContatoForm />
+    </Box>
+    <Box
       css={{
-        py: '$12',
-        px: '$16',
-        margin: '0 auto',
-        maxWidth: '1200px',
-        background: 'F6EBDA',
+        marginTop:'60px',
+        
         '@lg': {
           px: 0,
+          py: '$12',
         },
     }}>
        <Footer />
