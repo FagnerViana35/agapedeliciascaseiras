@@ -1,11 +1,16 @@
 import { styled } from "@stitches/react";
 
 export const StyledLink = styled('span', {
-  textDecoration: 'none',
-  color: 'blue',
+  'a': {
+    textDecoration: 'none',
+    color: 'red',
+  },
+  color: '$primary-pure',
   padding: 'auto',
   borderRadius: '0.3em',
-  backgroundColor: '$primary-pure',
+  //backgroundColor: '$primary-pure',
+  fontSize: '16px',
+  textDecorationStyle: 'none',
   transition: 'background-color 0.3s ease',
   whiteSpace: 'nowrap',
 

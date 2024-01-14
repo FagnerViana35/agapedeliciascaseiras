@@ -17,22 +17,23 @@ export const NavBar = () => {
               px: 0,
             },
           }}>
-          <HamburgerMenu 
+          {/* <HamburgerMenu 
             css={{
                 '@media (max-width: 768px)': {
                     display: 'none',
                   }
             }}
-           >
+           > */}
             <LogoNavBar>
             <Image src="/image/logo-agape.png" alt="Logo_Agape" width={100} height={50} />
             </LogoNavBar>
             <MenuNavBarUl 
-             css={{
-                '@media (max-width: 768px)': {
-                    display: 'none',
-                  },
-            }}>
+            //  css={{
+            //     '@media (max-width: 768px)': {
+            //         display: 'none',
+            //       },
+            // }}
+            >
                 <MenuNavBarLink>
                     <CustomLink href="/sobre">Sobre Nós</CustomLink>
                 </MenuNavBarLink>
@@ -43,15 +44,16 @@ export const NavBar = () => {
                     <CustomLink href="/sobre">Sobre Nós</CustomLink>
                 </MenuNavBarLink>
             </MenuNavBarUl>  
-            </HamburgerMenu>
+
+            {/* </HamburgerMenu>
             <MenuMobile css={{
                 display: 'none',
                 '@media (max-width: 768px)': {
                     display: 'block',
                   }
             }}>
-                <NavBarMobile/>  
-            </MenuMobile>
+                <NavBarMobile/>   */}
+            {/* </MenuMobile> */}
         </Box>
     );
 }
