@@ -1,6 +1,7 @@
 import { Box } from "@/modules/shared/components/Box";
 import { CloseOpenMenu, HamburgerMenu, LogoNavBar, MenuMobile, MenuNavBarLink, MenuNavBarUl } from "./styles";
 import Image from 'next/image'
+import Link from 'next/link';
 import CustomLink from "@/modules/shared/components/Link";
 import { NavBarMobile } from "../navBarMobile";
 
@@ -25,7 +26,9 @@ export const NavBar = () => {
             }}
            > */}
             <LogoNavBar>
-            <Image src="/image/logo-agape.png" alt="Logo_Agape" width={100} height={50} />
+            <Link href="/">
+                <Image src="/image/logo-agape.png" alt="Logo_Agape" width={100} height={50} />
+            </Link>
             </LogoNavBar>
             <MenuNavBarUl 
             //  css={{
@@ -35,13 +38,13 @@ export const NavBar = () => {
             // }}
             >
                 <MenuNavBarLink>
-                    <CustomLink href="/sobre">Sobre Nós</CustomLink>
+                    <CustomLink href="#secao-about">Sobre Nós</CustomLink>
                 </MenuNavBarLink>
                 <MenuNavBarLink>
-                    <CustomLink href="/sobre">Sobre Nós</CustomLink>
+                    <CustomLink href="/sobre">Teste 01</CustomLink>
                 </MenuNavBarLink>
                 <MenuNavBarLink>
-                    <CustomLink href="/sobre">Sobre Nós</CustomLink>
+                    <CustomLink href="/sobre">Teste 02</CustomLink>
                 </MenuNavBarLink>
             </MenuNavBarUl>  
 
